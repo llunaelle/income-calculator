@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   AXIFORMA FONT FAMILY
+   ================================ */
+
+/* Regular */
+@font-face {
+  font-family: "Axiforma";
+  src: url("/fonts/Axiforma-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "Axiforma";
+  src: url("/fonts/Axiforma-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Axiforma";
+  src: url("/fonts/Axiforma-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Axiforma";
+  src: url("/fonts/Axiforma-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Book Italic */
+@font-face {
+  font-family: "Axiforma";
+  src: url("/fonts/Axiforma-BookItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ================================
+   GLOBAL LAYOUT
+   ================================ */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Axiforma", sans-serif;
+}
+
+/* ================================
+   INCOME INPUT PLACEHOLDER
+   ================================ */
+
+.income-input::placeholder {
+  text-align: center;
+  font-family: "Axiforma";
+  font-style: italic;
+  color: #595858;
+}
+
+/* ================================
+   WRAPPER STYLES
+   ================================ */
+
+.income-wrapper {
+  position: relative;
+  width: 1000px;
+  height: 540px;
+}
+
+.income-border {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
